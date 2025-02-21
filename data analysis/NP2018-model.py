@@ -4,9 +4,6 @@ from scipy.stats import linregress
 import csv
 import os
 
-#kolumna 2 to jest price (X)
-#kolumna 3 to jest consumption forecast (C)
-
 df = pd.read_csv('NP2018.csv', header=None, parse_dates=[0])
 df = df[8736:]
 df = df.reset_index(drop=True)
